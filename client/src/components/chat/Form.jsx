@@ -14,7 +14,7 @@ const [loading, setLoading] = useState(false);
 
 const messageResponse = async () => {
 setLoading(true);
-const { data } = await axios.post('https://max-production-891c.up.railway.app/message', {
+const { data } = await axios.post('https://chatmax-production.up.railway.app/message', {
 message
 });
 setLoading(false);
