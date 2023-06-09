@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+body {
+  font-family: 'Gloria Hallelujah', sans-serif;
+}
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hide {
+-ms-overflow-style: none; /* IE and Edge /
+scrollbar-width: none; / Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+display: none; /* Chrome, Safari, Opera*/
+}
+
+@media (max-width: 767px) {
+.scrollbar-hide {
+overflow-y: auto;
+}
+}
+
+@media (max-width: 600px) {
+  .message {
+    max-width: 80%;
+    font-size: 14px;
+  }
+}
+
+
